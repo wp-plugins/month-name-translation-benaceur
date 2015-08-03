@@ -3,7 +3,7 @@ Contributors: Benaceur
 Tags: names months, name month, months names, month name, change name month, change name of month, change names of months, change name of month, translation names of the months, translation name of the month 
 Requires at least: 3.0
 Tested up to: 4.2.3
-Stable tag: 1.0
+Stable tag: 2.0
 License: GPLv2 or later
 
 This plugin allows you to edit and translate the names of the months ...
@@ -28,8 +28,11 @@ You can translate or modify the names of the months by this plugin from the admi
 
 1. Options page admin panel-1
 2. Options page admin panel-2
+3. Options page admin panel-3
 
 == Changelog ==
 
+= 2.0 =
+* Some adjustments.
 = 1.0 =
 * First released version.

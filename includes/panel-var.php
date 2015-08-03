@@ -28,5 +28,6 @@ $mntb_Dec = get_option( 'month_name_translation_benaceur_Dec' );
 $mntb_t_Dec = get_option( 'month_name_translation_benaceur_t_Dec' );
 
 $mntb_hide_icon_evol_plug = get_option( 'month_name_translation_benaceur_hide_icon_evol_plug' );
+$mntb_disable_input = get_option( 'month_name_translation_benaceur_dis_input' );
 $mntb_all_reset = get_option( 'mntb_all_reset' );
 $mntb_delete_all_options = get_option( 'month_name_translation_benaceur_delete_all_options' );

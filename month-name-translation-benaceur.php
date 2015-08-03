@@ -3,7 +3,7 @@
 Plugin Name: month name translation benaceur
 Plugin URI: http://benaceur-php.com/
 Description: This plugin allow you to display the latest news or latest articles in a bar with four beautiful animations...
-Version: 1.0
+Version: 2.0
 Author: benaceur
 Author URI: http://benaceur-php.com/
 License: GPL2
@@ -40,6 +40,7 @@ add_action('admin_init', 'month_name_translation_benaceur_register_options');
   'month_name_translation_benaceur_enable_plug',
   'month_name_translation_benaceur_delete_all_options',
   'month_name_translation_benaceur_hide_icon_evol_plug',
+  'month_name_translation_benaceur_dis_input',
   'month_name_translation_benaceur_jan',
   'month_name_translation_benaceur_t_jan',
   'month_name_translation_benaceur_Fev',
@@ -76,34 +77,53 @@ add_action('admin_init', 'month_name_translation_benaceur_register_options');
 	}
 }
 
+  function mntb_get_month_name($inp)
+  {
+  return date_i18n("F", strtotime(date_i18n("d-$inp-y")));
+  }
+
 // add_option
   function MNTB_group_options_default() {
+   $month_jan = mntb_get_month_name('1');
+   $month_feb = mntb_get_month_name('2');
+   $month_mar = mntb_get_month_name('3');
+   $month_apr = mntb_get_month_name('4');
+   $month_may = mntb_get_month_name('5');
+   $month_jun = mntb_get_month_name('6');
+   $month_jul = mntb_get_month_name('7');
+   $month_aug = mntb_get_month_name('8');
+   $month_sep = mntb_get_month_name('9');
+   $month_oct = mntb_get_month_name('10');
+   $month_nov = mntb_get_month_name('11');
+   $month_dec = mntb_get_month_name('12');
+	
   add_option( 'month_name_translation_benaceur_enable_plug', '1');
   add_option( 'month_name_translation_benaceur_delete_all_options', 'no_delete_opt_mntb');
-  add_option( 'month_name_translation_benaceur_jan', 'يناير');
-  add_option( 'month_name_translation_benaceur_t_jan', 'كانون الثاني');
-  add_option( 'month_name_translation_benaceur_Fev', 'فبراير');
-  add_option( 'month_name_translation_benaceur_t_Fev', 'شباط');
-  add_option( 'month_name_translation_benaceur_Mar', 'مارس');
-  add_option( 'month_name_translation_benaceur_t_Mar', 'آذار');
-  add_option( 'month_name_translation_benaceur_Avr', 'أبريل');
-  add_option( 'month_name_translation_benaceur_t_Avr', 'نيسان');
-  add_option( 'month_name_translation_benaceur_Mai', 'مايو');
-  add_option( 'month_name_translation_benaceur_t_Mai', 'أيار');
-  add_option( 'monthnametranslationbenaceurjuin', 'يونيو');
-  add_option( 'monthnametranslationbenaceurtjuin', 'حزيران');
-  add_option( 'monthnametranslationbenaceurjuil', 'يوليو');
-  add_option( 'monthnametranslationbenaceurtjuil', 'تموز');
-  add_option( 'month_name_translation_benaceur_Aou', 'أغسطس');
-  add_option( 'month_name_translation_benaceur_t_Aou', 'آب');
-  add_option( 'month_name_translation_benaceur_Sep', 'سبتمبر');
-  add_option( 'month_name_translation_benaceur_t_Sep', 'أيلول');
-  add_option( 'month_name_translation_benaceur_Oct', 'أكتوبر');
-  add_option( 'month_name_translation_benaceur_t_Oct', 'تشرين الأول');
-  add_option( 'month_name_translation_benaceur_Nov', 'نوفمبر');
-  add_option( 'month_name_translation_benaceur_t_Nov', 'تشرين الثاني');
-  add_option( 'month_name_translation_benaceur_Dec', 'ديسمبر');
-  add_option( 'month_name_translation_benaceur_t_Dec', 'كانون الأول');
+  add_option( 'month_name_translation_benaceur_dis_input', '0');
+  add_option( 'month_name_translation_benaceur_jan', $month_jan);
+  add_option( 'month_name_translation_benaceur_t_jan', $month_jan);
+  add_option( 'month_name_translation_benaceur_Fev', $month_feb);
+  add_option( 'month_name_translation_benaceur_t_Fev', $month_feb);
+  add_option( 'month_name_translation_benaceur_Mar', $month_mar);
+  add_option( 'month_name_translation_benaceur_t_Mar', $month_mar);
+  add_option( 'month_name_translation_benaceur_Avr', $month_apr);
+  add_option( 'month_name_translation_benaceur_t_Avr', $month_apr);
+  add_option( 'month_name_translation_benaceur_Mai', $month_may);
+  add_option( 'month_name_translation_benaceur_t_Mai', $month_may);
+  add_option( 'monthnametranslationbenaceurjuin', $month_jun);
+  add_option( 'monthnametranslationbenaceurtjuin', $month_jun);
+  add_option( 'monthnametranslationbenaceurjuil', $month_jul);
+  add_option( 'monthnametranslationbenaceurtjuil', $month_jul);
+  add_option( 'month_name_translation_benaceur_Aou', $month_aug);
+  add_option( 'month_name_translation_benaceur_t_Aou', $month_aug);
+  add_option( 'month_name_translation_benaceur_Sep', $month_sep);
+  add_option( 'month_name_translation_benaceur_t_Sep', $month_sep);
+  add_option( 'month_name_translation_benaceur_Oct', $month_oct);
+  add_option( 'month_name_translation_benaceur_t_Oct', $month_oct);
+  add_option( 'month_name_translation_benaceur_Nov', $month_nov);
+  add_option( 'month_name_translation_benaceur_t_Nov', $month_nov);
+  add_option( 'month_name_translation_benaceur_Dec', $month_dec);
+  add_option( 'month_name_translation_benaceur_t_Dec', $month_dec);
   }
 // add_option
 

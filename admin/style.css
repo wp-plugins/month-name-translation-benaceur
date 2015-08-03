@@ -5,9 +5,10 @@ input[type="text"] {
 	font-weight:normal;
 	padding: .5em 1em;
 }
-.sm_benaceurlist_caps_input-mntb input[type="text"]{color:#5D5D5D;font-weight:bold;max-width:110px;height:30px;border-radius:8px;border: 1px solid #E0E0E0;}
+.sm_benaceurlist_caps_input-mntb input[type="text"]{color:#5D5D5D;font-weight:bold;max-width:120px;height:30px;border-radius:8px;border: 1px solid #E0E0E0;}
 .form-table-mntb td { margin:400px 100px;padding:6px; }
 .form-table-mntb-td { max-width:110px;}
+.wrap588 { max-width:40%;}
 /* checked on / off ------- */
 
 .switch-nab {
@@ -224,4 +225,4 @@ input[type="text"] {
 .hov-button-primary-sub-mntb a:link {color:white;text-decoration: none;} .hov-button-primary-sub-mntb a:visited {color:white;} .hov-button-primary-sub-mntb a:active,.hov-button-primary-sub-mntb a:hover {olor:white;}
 
 #sub-mntb {display: none;}
-.c-sub-mntb {margin-top:100px;}
+.c-sub-mntb {margin-top:70px;}

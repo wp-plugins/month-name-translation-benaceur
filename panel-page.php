@@ -10,7 +10,6 @@ function month_name_translation_benaceur_page_options() {
             <?php settings_fields( 'month_name_translation_benaceur_group' ); 
 				do_settings_sections( 'month_name_translation_benaceur_group' );
 			?>
-
 <table class="form-table">
 	<tr>
 		<td>
@@ -22,85 +21,126 @@ function month_name_translation_benaceur_page_options() {
 		</td>
 	</tr>
 </table>
-
-<div class="to-tr2"></div>
 <br />
+<div class="wrap">
+    <div id="poststuff">
+        <div id="post-body" class="metabox-holder columns-3">
+            <!-- sidebar -->
+                    <div class="postbox">
+                        <div class="inside">
 <table border="0" width="98%" cellspacing="0" cellpadding="0">
+<?php if (empty($mntb_disable_input)) { $dis = "disabled"; echo '<style>.sm_benaceurlist_caps_input-mntb#h88521  input[type="text"]{color:#A8A8A8;background-color:#F5F5F5;}</style>'; } else { $dis_h = "disabled"; } ?>
 	<tr>
-		<td align="center" width="50%">
+		<td  width="50%">
               <table class="form-table-mntb">
                 <tr valign="top">
                     <td style="word-wrap:break-word;min-width:20%;">
-					<?php _e("Enter the names of months as currently in your site (in order)",'month-name-translation-benaceur'); ?>                   
+					<?php _e("The names of months as currently in your site:",'month-name-translation-benaceur'); ?>                   
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_jan" value="<?php echo $mntb_jan; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_jan" value="<?php echo $mntb_jan; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="month_name_translation_benaceur_jan" value="<?php echo $mntb_jan; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Fev" value="<?php echo $mntb_Fev; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Fev" value="<?php echo $mntb_Fev; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="month_name_translation_benaceur_Fev" value="<?php echo $mntb_Fev; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Mar" value="<?php echo $mntb_Mar; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Mar" value="<?php echo $mntb_Mar; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="month_name_translation_benaceur_Mar" value="<?php echo $mntb_Mar; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Avr" value="<?php echo $mntb_Avr; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Avr" value="<?php echo $mntb_Avr; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="month_name_translation_benaceur_Avr" value="<?php echo $mntb_Avr; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Mai" value="<?php echo $mntb_Mai; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Mai" value="<?php echo $mntb_Mai; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="month_name_translation_benaceur_Mai" value="<?php echo $mntb_Mai; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="monthnametranslationbenaceurjuin" value="<?php echo $mntb_Juin; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="monthnametranslationbenaceurjuin" value="<?php echo $mntb_Juin; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="monthnametranslationbenaceurjuin" value="<?php echo $mntb_Juin; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="monthnametranslationbenaceurjuil" value="<?php echo $mntb_Juil; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="monthnametranslationbenaceurjuil" value="<?php echo $mntb_Juil; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="monthnametranslationbenaceurjuil" value="<?php echo $mntb_Juil; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Aou" value="<?php echo $mntb_Aou; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Aou" value="<?php echo $mntb_Aou; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="month_name_translation_benaceur_Aou" value="<?php echo $mntb_Aou; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Sep" value="<?php echo $mntb_Sep; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Sep" value="<?php echo $mntb_Sep; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="month_name_translation_benaceur_Sep" value="<?php echo $mntb_Sep; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Oct" value="<?php echo $mntb_Oct; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Oct" value="<?php echo $mntb_Oct; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="month_name_translation_benaceur_Oct" value="<?php echo $mntb_Oct; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Nov" value="<?php echo $mntb_Nov; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Nov" value="<?php echo $mntb_Nov; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="month_name_translation_benaceur_Nov" value="<?php echo $mntb_Nov; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
                 <tr valign="top">
                     <td>
-					<div class="sm_benaceurlist_caps_input-mntb"><input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Dec" value="<?php echo $mntb_Dec; ?>" /></div>
+					<div class="sm_benaceurlist_caps_input-mntb" id="h88521">
+					<input style="font-weight:bold;" type="text" name="month_name_translation_benaceur_Dec" value="<?php echo $mntb_Dec; ?>" <?php echo $dis; ?> />
+					<input style="font-weight:bold;" type="hidden" name="month_name_translation_benaceur_Dec" value="<?php echo $mntb_Dec; ?>" <?php echo $dis_h; ?> />
+					</div>
                    </td>
                 </tr>
               </table>
 		</td>
-		<td align="center" width="50%">
+		<td  width="50%">
               <table class="form-table-mntb">
                 <tr valign="top">
                     <td style="word-wrap:break-word;min-width:20%;">
-					<?php _e("Enter the new names of the months of your choice (in order)",'month-name-translation-benaceur'); ?>                   
+					<?php _e("Enter the new names of the months of your choice (in order):",'month-name-translation-benaceur'); ?>                   
                    </td>
                 </tr>
                 <tr valign="top">
@@ -166,10 +206,103 @@ function month_name_translation_benaceur_page_options() {
               </table>
 		</td>
 	</tr>
+<table style="margin-top:20px;" >
+	
+                <tr>  
+                    <td> 
+					<label class="switch-nab">				
+
+	                    <input type="checkbox" class="switch-input" name="month_name_translation_benaceur_dis_input" value="1" <?php if( $mntb_disable_input) { echo 'checked="checked"'; } ?>/>
+                        <span class="switch-label" data-on="On" data-off="Off"></span>
+                        <span class="switch-handle"></span>
+                   </label>
+       &nbsp;&nbsp;&nbsp; <td style="font-size: 13px;font-weight:normal;"><?php _e('Enable editing names of the months', 'month-name-translation-benaceur'); ?></td>
+				   </td>
+                </tr>
 </table>
+</table>
+							</div> <!-- .inside -->
+                         
+                    </div> <!-- .postbox -->
+        </div> <!-- #post-body .metabox-holder .columns-2 -->
+        <br class="clear">
+    </div> <!-- #poststuff -->
+</div> <!-- .wrap --> 
 
-<br /><div class="to-tr2"></div><br />
+<div class="wrap588">
+  <?php 
+   $month_jan = mntb_get_month_name('1');
+   $month_feb = mntb_get_month_name('2');
+   $month_mar = mntb_get_month_name('3');
+   $month_apr = mntb_get_month_name('4');
+   $month_may = mntb_get_month_name('5');
+   $month_jun = mntb_get_month_name('6');
+   $month_jul = mntb_get_month_name('7');
+   $month_aug = mntb_get_month_name('8');
+   $month_sep = mntb_get_month_name('9');
+   $month_oct = mntb_get_month_name('10');
+   $month_nov = mntb_get_month_name('11');
+   $month_dec = mntb_get_month_name('12');
+  ?>
+<div class="wrap">
+    <div id="poststuff">
+        <div id="post-body" class="metabox-holder columns-2">
+            <!-- sidebar -->
+            <div id="postbox-container-3" class="postbox-container">
+                    <div class="postbox">
+                     
+                        <div style="font-weight:bold;font-size:16px;font-family:arial;padding-right:18px;padding-left:18px;margin-top:14px;"><?php _e("The current names of months in your site",'month-name-translation-benaceur'); ?></div>
+                        <div class="inside">
+                            <table class="form-table">
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_jan; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_feb; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_mar; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_apr; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_may; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_jun; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_jul; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_aug; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_sep; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_oct; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_nov; ?></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mash_b"><?php echo $month_dec; ?></label></td>
+                            </tr>
+                            </table>
+							</div> <!-- .inside -->
+                         
+                    </div> <!-- .postbox -->
+            </div> <!-- #postbox-container-1 .postbox-container -->
+        </div> <!-- #post-body .metabox-holder .columns-2 -->
+        <br class="clear">
+    </div> <!-- #poststuff -->
+</div> <!-- .wrap --> 
+</div>  
 
+<div class="wrap588"><div id="poststuff"><div id="post-body" class="metabox-holder columns-2"><div class="postbox">
+<div class="inside">
 <table style="margin-top:20px;" >
 	
 					<tr>
@@ -200,7 +333,9 @@ function month_name_translation_benaceur_page_options() {
 				   </td>
                 </tr>
 </table>
-<br />
+</div> <!-- .inside -->
+</div></div><br class="clear"></div></div>  
+
 					<p><?php submit_button(); ?></p>
         </form>
 		
@@ -209,8 +344,7 @@ function month_name_translation_benaceur_page_options() {
 <br /><div class="to-tr"></div>
 <br />
     <form action="options.php" method="post">
-            <?php settings_fields( 'month_name_translation_benaceur_all_reset' ); 
-			?>
+            <?php settings_fields( 'month_name_translation_benaceur_all_reset' ); ?>
 	  <input type="hidden"  name="mntb_all_reset" value="1" <?php if(empty($mntb_all_reset) ) { echo 'checked="checked"'; } ?>/>
       <input type="submit" value="<?php _e('Reset all settings', 'month-name-translation-benaceur');?>" class="button-secondary" />
     </form>
@@ -243,6 +377,6 @@ document.getElementById(id).style.display = 'inline';
 }
 </script>
 
-<?php
-        }
+   <?php
+  }
 

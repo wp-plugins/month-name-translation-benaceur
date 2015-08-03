@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: month name translation benaceur v1.0\n"
+"Project-Id-Version: month name translation benaceur v2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-07-30 18:09:26+0000\n"
+"PO-Revision-Date: 2015-08-03 11:32:35+0000\n"
 "Last-Translator: benaceur <mohamedcompte@hotmail.fr>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -36,54 +36,44 @@ msgstr "بعد هذا التحديث اضغط على ctl+F5 لتفريغ كاش 
 msgid "Settings"
 msgstr "إعدادات"
 
-#: panel-page.php:21
+#: panel-page.php:20
 #@ month-name-translation-benaceur
 msgid "Enable plugin"
 msgstr "تفعيل الإضافة"
 
-#: panel-page.php:34
-#@ month-name-translation-benaceur
-msgid "Enter the names of months as currently in your site (in order)"
-msgstr "أدخل أسماء الشهور كما هي حاليا في موقعك أي المترجمة (بالترتيب)"
-
-#: panel-page.php:103
-#@ month-name-translation-benaceur
-msgid "Enter the new names of the months of your choice (in order)"
-msgstr "أدخل أسماء الشهور الجديدة التي تختارها (بالترتيب)"
-
-#: panel-page.php:178
+#: panel-page.php:311
 #@ month-name-translation-benaceur
 msgid "Remove all settings and data of the plugin from database when the plugin is disabled"
 msgstr "حذف جميع إعدادات وبيانات الإضافة من قاعدة البيانات عند تعطيلها"
 
-#: panel-page.php:185
+#: panel-page.php:318
 #@ month-name-translation-benaceur
 msgid "Do not delete"
 msgstr "لا تحذف"
 
-#: panel-page.php:199
+#: panel-page.php:332
 #@ month-name-translation-benaceur
 msgid "Hide the plugin rating icon"
 msgstr "إخفاء أيقونة تقييم الإضافة"
 
-#: panel-page.php:215
+#: panel-page.php:349
 #@ month-name-translation-benaceur
 msgid "Reset all settings"
 msgstr "إعادة تعيين جميع الإعدادات Reset"
 
-#: panel-page.php:220
+#: panel-page.php:354
 #@ month-name-translation-benaceur
 msgid "Do not forget to rate the plugin"
 msgstr "لا تنس تقييم الإضافة"
 
-#: panel-page.php:231
-#: panel-page.php:237
+#: panel-page.php:365
+#: panel-page.php:371
 #@ month-name-translation-benaceur
 msgid "My plugins"
 msgstr "إضافاتي My plugins"
 
-#: panel-page.php:236
-#: panel-page.php:240
+#: panel-page.php:370
+#: panel-page.php:374
 #@ month-name-translation-benaceur
 msgid "Hide this list"
 msgstr "إخفاء القائمة"
@@ -92,4 +82,24 @@ msgstr "إخفاء القائمة"
 #@ month-name-translation-benaceur
 msgid "Month-Name-Translation-Benaceur"
 msgstr ""
+
+#: panel-page.php:254
+#@ month-name-translation-benaceur
+msgid "The current names of months in your site"
+msgstr "أسماء الشهور كما هي حاليا في موقعك"
+
+#: panel-page.php:38
+#@ month-name-translation-benaceur
+msgid "The names of months as currently in your site:"
+msgstr "أسماء الشهور كما هي حاليا في موقعك أي المترجمة:"
+
+#: panel-page.php:143
+#@ month-name-translation-benaceur
+msgid "Enter the new names of the months of your choice (in order):"
+msgstr "أدخل أسماء الشهور الجديدة التي تختارها (بالترتيب):"
+
+#: panel-page.php:219
+#@ month-name-translation-benaceur
+msgid "Enable editing names of the months"
+msgstr "تمكين تحرير أسماء الشهور"
 
